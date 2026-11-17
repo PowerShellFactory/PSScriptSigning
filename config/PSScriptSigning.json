@@ -1,0 +1,17 @@
+﻿{	
+	"Title"  : "PowerShell Code Signing",
+	"Version": "1.1.0",	
+	"Defaults" :
+	{
+		"Certificate":
+		{
+			"HashAlgorithm" : ["SHA256","SHA512"],
+			"FriendlyName"  : "PowerShell code signing certificate",
+			"DNSName"       : "selfsign.pscompany.com",
+			"ValidYears"    : 5,
+			"Type"          : "CodeSigningCert",
+			"KeyLength"     : ["2048","4096","8192"]
+		}
+	},
+	"TimestampServer": "http://timestamp.digicert.com"	
+}
